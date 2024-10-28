@@ -1,0 +1,382 @@
+html{
+    scroll-behavior: smooth;
+    transition: 0.40s;
+  
+  }
+
+
+  html { scrollbar-width: none; } /* Firefox */
+  body { -ms-overflow-style: none; } /* IE and Edge */
+  body::-webkit-scrollbar, body::-webkit-scrollbar-button { display: none; } /* Chrome */
+  
+  
+  body{
+      margin: 0 auto;
+      background-color: #eeeeee;
+      height: auto;
+
+  }
+
+
+
+::-webkit-scrollbar {
+  display: none; 
+}
+
+  .hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(50%);
+    transition: all 0.80s;
+  }
+
+  a:link{
+    text-decoration: none!important;
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;    
+  }
+
+  a{
+    text-decoration: none;
+
+  }
+
+  @font-face {
+    font-family: aileron-regular;
+    src: url(Aileron/Aileron-Regular.otf);
+  }  
+  
+  @font-face {
+    font-family: aileron-Bold;
+    src: url(Aileron/Aileron-Bold.otf);
+  }
+
+
+  
+  .show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+  }
+  
+  .logo:nth-child(1) {
+    transition-delay: 100ms ;
+  }
+  
+  .logo:nth-child(2) {
+    transition-delay:200ms ;
+  }
+  
+  .logo:nth-child(3) {
+    transition-delay:300ms ;
+  }
+  
+  .logo:nth-child(4) {
+    transition-delay:400ms ;
+  }
+  
+  .logo:nth-child(5) {
+    transition-delay: 500ms ;
+  }
+  .logo:nth-child(6) {
+    transition-delay: 600ms ;
+  }
+  
+  .logo:nth-child(7) {
+    transition-delay: 700ms ;
+  }
+
+  .title{
+    font-family: "Inter", serif;
+    font-weight: 700;
+  }
+  
+  .details{
+    font-family: "Inter", serif;
+    font-weight: 500;
+  }
+  
+  .img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  .divider{
+    width: 95%;
+    height: 1px;
+    background-color: #cccccc;
+    margin-top: 130px;
+    margin-bottom: 130px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .top-nav{
+    display: flex;
+    z-index: 6;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    justify-content: center;
+    position: fixed;
+
+    
+    .img{
+        align-self: center;
+        width: 100px;
+        object-fit: contain;
+    }
+  }
+
+  .spacer{
+    height: 50px;
+    width: 100%;
+  }
+
+  .filters{
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 6;
+    border-bottom: #cccccc solid 1px;
+
+    .container-snap{
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      height: auto;
+      width: 95%;
+      border-radius: 13px;
+
+      margin-right: auto;
+      margin-left: auto;
+      scroll-snap-type: x mandatory;
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+
+      .filter{
+        width: auto;
+        height: auto;
+        padding-left: 27px;
+        padding-right: 27px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 13px;
+        background-color: #eeeeee;
+        font-family: inter;
+        color: rgb(0, 0, 0);
+        font-size: 12px;
+        transition: 0.40s;
+      }
+
+      .filter:hover{
+        background-color: #000000;
+        color: white;
+      }
+    }
+
+
+  }
+
+  .nav-bar-container{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    position: absolute;
+    z-index: 6;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  
+    .nav-bar{
+        justify-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        height: 80%;
+        background-color: #ffffff;
+        border-radius: 100px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+
+        .nav-button-active{
+            display: flex;
+            width: 40px;
+            height: 40px;
+            border-radius: 100px;
+            justify-content: center;
+            align-items: center;
+            
+            .material-symbols-rounded{
+                color: #000000;
+                font-variation-settings:
+                'FILL' 1,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+            }
+        }
+
+        .nav-button{
+            display: flex;
+            width: 40px;
+            height: 40px;
+            border-radius: 100px;
+            justify-content: center;
+            align-items: center;
+            
+            .material-symbols-rounded{
+                color: #b3b3b3;
+                transition: 0.40s;
+                font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+            }
+        }
+
+        .nav-button-active:hover{
+            background-color: #eeeeee;
+        }
+
+        .nav-button:hover{
+            background-color: #eeeeee;
+
+            .material-symbols-rounded{
+              color: #b3b3b3;
+              font-variation-settings:
+              'FILL' 1,
+              'wght' 400,
+              'GRAD' 0,
+              'opsz' 24
+          }
+        }
+    }
+  }
+
+
+
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.content{
+  width: 95%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  .text-container{
+    width: 100%;
+    height: 40px;
+    border-bottom: #cccccc solid 1px;
+    margin-top: 30px;
+    
+    .title{
+      font-size: 27px;
+    }
+  }
+
+  .anchor{
+    width: 100%;
+    height: 130px;
+  }
+
+  .title-tag{
+    font-family: "Inter", serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .profile{
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    transition: 0.40s;
+
+    .img-container img{
+      width: 100%;
+      height: 250px;
+      border-radius: 16px;
+    }
+
+    .flex{
+      display: flex;
+
+      .text-container-profile{
+        margin-top: 10px;
+        width: 900px;
+        .title{
+          font-size: 15px;
+          color: #000000;
+
+        }
+  
+        .details{
+          margin-top: 5px;
+          font-size: 10px;
+          font-weight: 300;
+          color: #000000;
+
+        }
+      }
+
+      .rate{
+        display: flex;
+        width: 100%;
+        height: 30px;
+        justify-content: right;
+        gap: 10px;
+
+        .img-container{
+          width: 20px;
+          height: 20px;
+
+          .img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .details{
+          font-size: 15px;
+          color: #000000;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+
+  .profile:hover{
+    transform: scale(0.97);
+  }
+}

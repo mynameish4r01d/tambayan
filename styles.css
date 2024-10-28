@@ -303,6 +303,7 @@ html{
   .title{
     margin-left: 10px;
     font-size: 21px;
+    margin-top: 50px;
   }
 
 
@@ -337,17 +338,19 @@ html{
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
         overflow-y: hidden;
+        gap: 10px;
+
 
 
         .box{
-            width: 200px;
+            width: 100%;
             position: relative;
             margin-left: 10px;
             
 
             .img{
-              width: 200px;
-              height: 150px;
+              width: 100%;
+              height: 180px;
               border-radius: 16px;
               object-fit: cover;
                 scroll-snap-align: left;
@@ -431,7 +434,7 @@ html{
 
         .material-symbols-rounded{
           color: white;
-          font-size: 30px;
+          font-size: 25px;
           transition: 0.40s;
           align-self: center;
 
@@ -440,6 +443,8 @@ html{
         .details{
           color: white;
           align-self: center;
+          font-size: 15px;
+
         }
       }
 
@@ -456,7 +461,7 @@ html{
 
         .material-symbols-rounded{
           color: rgb(0, 0, 0);
-          font-size: 30px;
+          font-size: 25px;
           transition: 0.40s;
           align-self: center;
 
@@ -465,6 +470,8 @@ html{
         .details{
           color: rgb(0, 0, 0);
           align-self: center;
+          font-size: 15px;
+
 
         }
       }
